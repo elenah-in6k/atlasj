@@ -1,5 +1,7 @@
 package core.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +13,7 @@ public class BodySystem {
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @JsonProperty
     @Column(name = "name", length = 100, nullable = false)
     private String name;
 
