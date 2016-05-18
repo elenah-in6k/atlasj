@@ -23,10 +23,6 @@ angular
         templateUrl: 'app/views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'app/views/about.html',
-        controller: 'AboutCtrl'
-      })
       .when('/bodySystems', {
         templateUrl: 'app/views/body-systems.html',
         controller: 'BodySystemCtrl'
@@ -78,9 +74,39 @@ angular
       .when('/joints', {
         templateUrl: 'app/views/joints/joints.html'
       })
+      .when('/joints/head', {
+        templateUrl: 'app/views/joints/head.html'
+      })
+      .when('/joints/sternum', {
+        templateUrl: 'app/views/joints/sternum.html'
+      })
+      .when('/joints/shoulder', {
+        templateUrl: 'app/views/joints/shoulder.html'
+      })
+      .when('/joints/hand', {
+        templateUrl: 'app/views/joints/hand.html'
+      })
+      .when('/joints/pelvis', {
+        templateUrl: 'app/views/joints/pelvis.html'
+      })
+      .when('/joints/foot', {
+        templateUrl: 'app/views/joints/foot.html'
+      })
 
       .when('/tissue', {
         templateUrl: 'app/views/tissue/tissue.html'
+      })
+      .when('/tissue/epithelial', {
+        templateUrl: 'app/views/tissue/epithelial.html'
+      })
+      .when('/tissue/connective', {
+        templateUrl: 'app/views/tissue/connective.html'
+      })
+      .when('/tissue/muscles', {
+        templateUrl: 'app/views/tissue/muscles.html'
+      })
+      .when('/tissue/nervous', {
+        templateUrl: 'app/views/tissue/nervous.html'
       })
 
       .when('/systems', {
