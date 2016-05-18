@@ -55,6 +55,24 @@ angular
       .when('/skeleton', {
         templateUrl: 'app/views/skeleton/skeleton.html'
       })
+      .when('/skeleton/head', {
+        templateUrl: 'app/views/skeleton/head.html'
+      })
+      .when('/skeleton/spine', {
+        templateUrl: 'app/views/skeleton/spine.html'
+      })
+      .when('/skeleton/torso', {
+        templateUrl: 'app/views/skeleton/torso.html'
+      })
+      .when('/skeleton/hand', {
+        templateUrl: 'app/views/skeleton/hand.html'
+      })
+      .when('/skeleton/pelvis', {
+        templateUrl: 'app/views/skeleton/pelvis.html'
+      })
+      .when('/skeleton/foot', {
+        templateUrl: 'app/views/skeleton/foot.html'
+      })
 
 
       .when('/joints', {
