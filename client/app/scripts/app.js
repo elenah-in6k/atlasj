@@ -33,6 +33,31 @@ angular
       .when('/muscles/head', {
         templateUrl: 'app/views/muscles/head.html'
       })
+      .when('/muscles/head/supracranial-neck', {
+        templateUrl: 'app/views/muscles/head/supracranial-neck.html'
+      })
+      .when('/muscles/head/supracranial-frontal', {
+        templateUrl: 'app/views/muscles/head/supracranial-frontal.html'
+      })
+      .when('/muscles/head/temporalis', {
+        templateUrl: 'app/views/muscles/head/temporalis.html'
+      })
+      .when('/muscles/head/anterior-auricular', {
+        templateUrl: 'app/views/muscles/head/anterior-auricular.html'
+      })
+      .when('/muscles/head/superior-auricular', {
+        templateUrl: 'app/views/muscles/head/superior-auricular.html'
+      })
+      .when('/muscles/head/posterior-auricular', {
+        templateUrl: 'app/views/muscles/head/posterior-auricular.html'
+      })
+      // .when('/muscles/head/supracranial-neck', {
+      //   templateUrl: 'app/views/muscles/head/supracranial-neck.html'
+      // })
+      // .when('/muscles/head/supracranial-neck', {
+      //   templateUrl: 'app/views/muscles/head/supracranial-neck.html'
+      // })
+
       .when('/muscles/neck', {
         templateUrl: 'app/views/muscles/neck.html'
       })
