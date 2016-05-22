@@ -110,9 +110,41 @@ angular
       })
 
       .when('/systems', {
-        templateUrl: 'app/views/systems/systems.html'
+        templateUrl: 'app/views/systems/sys.html'
       })
-
+      .when('/systems/heard', {
+        templateUrl: 'app/views/systems/heard/heard.html'
+      })
+      .when('/systems/blood', {
+        templateUrl: 'app/views/systems/blood/blood.html'
+      })
+      .when('/systems/endocrine', {
+        templateUrl: 'app/views/systems/endocrine/endocrine.html'
+      })
+      .when('/systems/respiratory', {
+        templateUrl: 'app/views/systems/respiratory/respiratory.html'
+      })
+      .when('/systems/digestive', {
+        templateUrl: 'app/views/systems/digestive/digestive.html'
+      })
+      .when('/systems/excretory', {
+        templateUrl: 'app/views/systems/excretory/excretory.html'
+      })
+      .when('/systems/reproductive', {
+        templateUrl: 'app/views/systems/reproductive/reproductive.html'
+      })
+      .when('/systems/nervous', {
+        templateUrl: 'app/views/systems/nervous/nervous.html'
+      })
+      .when('/systems/senses', {
+        templateUrl: 'app/views/systems/senses/senses.html'
+      })
+      .when('/systems/skin', {
+        templateUrl: 'app/views/systems/skin/skin.html'
+      })
+      .when('/not', {
+        templateUrl: 'app/views/not-impl.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
