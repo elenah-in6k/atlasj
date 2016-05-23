@@ -6714,7 +6714,7 @@ button.close.close-gallery {
 }
 .page-articles .featured ul li span:after{
   content: "";
-  background: url(../../images/circle-placeholder.png);
+  background: url(../../images/circle-placeholder2.png);
   padding: 8px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6731,7 +6731,7 @@ button.close.close-gallery {
   font-style: normal;
 }
 .page-articles .featured ul li a{
-  background: #173883;
+  background: #3EC7B5;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -6746,9 +6746,8 @@ button.close.close-gallery {
   transform:rotate(15deg);
 }
 .page-articles .featured ul li a:hover {
-  background: #68B92E;
+  background: magenta;
   padding-right: 70px;
-
 }
 
 
@@ -6901,8 +6900,6 @@ button.close.close-gallery {
 
 /**ДЛЯ СТРАНИЦЫ INSIDE2*/
 
-
-}
 .trunklist {
   list-style: outside none none;
   margin-top:30px;
