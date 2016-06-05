@@ -1,0 +1,21 @@
+<div id="content">
+  <div class="box">
+    <div class="text std">
+      <h2>{{questionsName}}</h2>
+<form>
+  <ol>
+    <li ng-repeat="question in questions track by $index">
+      <strong ng-class="currentIndex = $index;">{{question.text}}</strong><br>
+      <div ng-repeat="answer in question.answers track by $index"><input type="radio" name="q{{currentIndex}}" ng-click="engine(currentIndex, $index)" >{{answer}} <br>
+      </div>
+      <br/>
+    </li>
+  </ol>
+
+  <div class="bbb"  ng-click="showRes()" >Перевірити результати</div>
+  <div class="bbb"   >Почати спочатку</div>
+</form>
+
+</div>
+  </div>
+</div>

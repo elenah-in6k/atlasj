@@ -6750,13 +6750,7 @@ button.close.close-gallery {
   padding-right: 70px;
 }
 
-
-/**
-                                 * Oleg 16.03.2015
-                                 */
-
-
-.bodypart {
+.bodypart , .bbb{
   padding-top: 15px;
   padding-left:10px;
 }
@@ -6783,13 +6777,13 @@ button.close.close-gallery {
 }
 
 
-.bodypart ul li {
+.bodypart ul li, .bbb {
   margin-bottom:5px;
   /*border: 2px solid red;*/
   height:80px;
 }
 
-.bodypart ul li a {
+.bodypart ul li a , .bbb {
   padding-left:20px;
   display:block;
   height:40px;
@@ -6828,8 +6822,21 @@ button.close.close-gallery {
 
 }
 
-.buttback a{/*рисует зеленый фон ссылке "назад" */display:block;width:155px;height:38px;background: none repeat scroll 0 0 rgb(255, 0, 255);border-radius: 40px;color: white;font-size: 14px;padding-top:8px;text-decoration: none;text-transform: uppercase;transition: all 0.2s linear 0s;position:relative;}
-.buttback  {
+.buttback a {/*рисует зеленый фон ссылке "назад" */
+  display:block;
+  width:155px;
+  height:38px;
+  background: none repeat scroll 0 0 rgb(255, 0, 255);
+  border-radius: 40px;
+  color: white;
+  font-size: 14px;
+  padding-top:8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear 0s;
+  position:relative;
+}
+.buttback   {
   display:block;
   padding-top:25px;
   float:right;
@@ -6842,7 +6849,7 @@ button.close.close-gallery {
   font-size:19px;
 
 }
-.buttback p{
+.buttback p {
   top:-17px;
   position:relative;
   color:;
@@ -6889,7 +6896,7 @@ button.close.close-gallery {
 .buttback a:hover{
   background-color: #3EC7B5;
 }
-.bodypart ul li a:hover {
+.bodypart ul li a:hover , .bbb:hover{
   background: magenta;
 }
 
@@ -7161,707 +7168,716 @@ button.close.close-gallery {
   margin-left: -20px;
 }
 @media all and (max-width:500px) {
-  .nets  {
-    margin-top:30px;
-    margin-left:auto;
-    right:10px;
-    top:10;
-    bottom:0px;
+  .nets {
+    margin-top: 30px;
+    margin-left: auto;
+    right: 10px;
+    top: 10;
+    bottom: 0px;
     padding-left: 10px;
   }
-  .atrcont{
+
+  .atrcont {
     margin-right: 10px;
     margin-left: 10px;
   }
+
   .institle {
     color: #3c546f;
-    position:relative;
-    left:-20px;
-    top:-20px;
-  }
-  .toread a{
-    top:-20px;
-    left:-20px;
-  }
-  .pagering {
-    text-align:center;
-    list-style: outside none none;
-    position:relative;
-    left: auto;
-    right:auto;
-    margin-bottom:50px;
-  }
-  .pagering li{
-    display:inline;
-  }
-  .pagering  a {
-    display:inline-block;
-    height:35px;
-    width:35px;
-    border:1px solid #d9d9d9;
-    border-radius:0px;
-    color:#707179;
-    font-size:14px;
-    text-align:center;
-    line-height: 35px;
-  }
-  .pagering  a:hover{
-    border:1px solid #748e95;
-    color:white;
-    background-color:#87a9b1;
-    text-decoration:none;
+    position: relative;
+    left: -20px;
+    top: -20px;
   }
 
-  .shedule1{
-    margin-top:30px;
-    margin-right:30px;
+  .toread a {
+    top: -20px;
+    left: -20px;
+  }
+
+  .pagering {
+    text-align: center;
+    list-style: outside none none;
+    position: relative;
+    left: auto;
+    right: auto;
+    margin-bottom: 50px;
+  }
+
+  .pagering li {
+    display: inline;
+  }
+
+  .pagering a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    color: #707179;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .pagering a:hover {
+    border: 1px solid #748e95;
+    color: white;
+    background-color: #87a9b1;
+    text-decoration: none;
+  }
+
+  .shedule1 {
+    margin-top: 30px;
+    margin-right: 30px;
     width: 566px;
     height: 686px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule2{
-    padding-right:10px;
+  .shedule2 {
+    padding-right: 10px;
   }
 
-  .shedule3{
+  .shedule3 {
     font-family: Aldine401BTWebBold;
-    font-size:35px;
-    color:#f00000;
+    font-size: 35px;
+    color: #f00000;
 
   }
 
-  .shedule4{
-    margin-top:30px;
-    margin-left:20px;
+  .shedule4 {
+    margin-top: 30px;
+    margin-left: 20px;
 
   }
 
-  .shedule5{
-    padding-left:30px;
-    padding-right:10px;
+  .shedule5 {
+    padding-left: 30px;
+    padding-right: 10px;
 
   }
 
-  .shedule6{
+  .shedule6 {
     font-family: Aldine401BTWebBold;
-    font-size:18px;
-    color:#418c0b;
+    font-size: 18px;
+    color: #418c0b;
 
   }
 
-  .shedule7{
+  .shedule7 {
     font-family: Aldine401BTWebBold;
-    font-size:30px;
-    color:black;
-    padding-left:20px;
-    padding-top:20px;
+    font-size: 30px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
 
   }
 
-  .shedule8{
+  .shedule8 {
     font-family: Tahoma;
-    font-size:17px;
-
-
-  }
-
-  .shedule9{
-    margin-left:50px;
-    margin-top:20px;
+    font-size: 17px;
 
   }
 
-  .shedule10{
-    padding-right:5px;
+  .shedule9 {
+    margin-left: 50px;
+    margin-top: 20px;
 
   }
 
-  .shedule11{
-    margin-top:30px;
-    margin-left:20px;
+  .shedule10 {
+    padding-right: 5px;
 
   }
 
-  .shedule12{
-    padding-bottom:4px;
+  .shedule11 {
+    margin-top: 30px;
+    margin-left: 20px;
 
   }
 
-  .shedule13{
+  .shedule12 {
+    padding-bottom: 4px;
+
+  }
+
+  .shedule13 {
     font-family: Tahoma;
-    font-size:15px;
+    font-size: 15px;
   }
 
-  .shedule14{
+  .shedule14 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:#f00000;
-    padding-left:95px;
+    font-size: 32px;
+    color: #f00000;
+    padding-left: 95px;
 
   }
 
-  .shedule15{
-    margin-top:30px;
+  .shedule15 {
+    margin-top: 30px;
 
   }
 
-  .shedule16{
+  .shedule16 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:black;
-    padding-left:20px;
-    padding-top:25px;
+    font-size: 32px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 25px;
 
   }
 
-  .shedule17{
+  .shedule17 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:#f00000;
-    padding-left:185px;
+    font-size: 32px;
+    color: #f00000;
+    padding-left: 185px;
 
   }
 
-  .shedule18{
+  .shedule18 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
+    font-size: 32px;
     line-height: 1;
-    color:black;
-    padding-left:20px;
-    padding-top:20px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
 
   }
 
-  .shedule19{
+  .shedule19 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:#f00000;
+    font-size: 32px;
+    color: #f00000;
 
   }
 
-  .shedule20{
+  .shedule20 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
+    font-size: 26px;
     line-height: 1;
-    color:black;
-    padding-left:20px;
-    padding-top:20px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
 
   }
 
-  .shedule21{
-    margin-top:30px;
-    margin-right:30px;
+  .shedule21 {
+    margin-top: 30px;
+    margin-right: 30px;
     width: 367px;
     height: 530px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule22{
-    padding-right:10px;
+  .shedule22 {
+    padding-right: 10px;
 
   }
 
-  .shedule23{
+  .shedule23 {
     font-family: Aldine401BTWebBold;
-    font-size:28px;
-    color:#418c0b;
+    font-size: 28px;
+    color: #418c0b;
 
   }
 
-  .shedule24{
+  .shedule24 {
     font-family: Aldine401BTWebBold;
-    font-size:42px;
-    color:#f00000;
+    font-size: 42px;
+    color: #f00000;
 
   }
 
-  .shedule25{
-    margin-top:10px;
-    margin-left:20px;
+  .shedule25 {
+    margin-top: 10px;
+    margin-left: 20px;
 
   }
 
-  .shedule26{
+  .shedule26 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
+    font-size: 26px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:20px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 20px;
 
   }
 
-  .shedule27{
+  .shedule27 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:#f00000;
-    padding-left:20px;
+    font-size: 32px;
+    color: #f00000;
+    padding-left: 20px;
 
   }
 
-  .shedule28{
-    margin-top:32px;
-    margin-left:10px;
+  .shedule28 {
+    margin-top: 32px;
+    margin-left: 10px;
 
   }
 
-  .shedule29{
+  .shedule29 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
+    font-size: 26px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:30px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 30px;
 
   }
 
-  .shedule30{
-    margin-top:45px;
-    margin-left:10px;
+  .shedule30 {
+    margin-top: 45px;
+    margin-left: 10px;
 
   }
 
-  .shedule31{
+  .shedule31 {
     font-family: Aldine401BTWebBold;
-    font-size:24px;
-    color:#418c0b;
+    font-size: 24px;
+    color: #418c0b;
 
   }
 
-  .shedule32{
-    margin-top:57px;
-    margin-left:10px;
+  .shedule32 {
+    margin-top: 57px;
+    margin-left: 10px;
 
   }
 
-  .shedule33{
-    margin-top:70px;
-    margin-left:10px;
+  .shedule33 {
+    margin-top: 70px;
+    margin-left: 10px;
 
   }
 
-  .shedule34{
-    margin-top:5px;
-    margin-left:10px;
+  .shedule34 {
+    margin-top: 5px;
+    margin-left: 10px;
 
   }
 
-  .shedule35{
-    margin-top:350px;
+  .shedule35 {
+    margin-top: 350px;
 
   }
-  .shedule36{
+
+  .shedule36 {
     font-family: CometaWeb;
-    font-size:70px;
-    color:#003586;
-    text-align:center;
+    font-size: 70px;
+    color: #003586;
+    text-align: center;
   }
 
-  .shedule37{
+  .shedule37 {
     font-family: CometaWeb;
-    font-size:50px;
-    color:#003586;
-    text-align:center;
+    font-size: 50px;
+    color: #003586;
+    text-align: center;
   }
 
-  .shedule38{
-    margin-top:100px;
-
-  }
-
-  .shedule39{
-    margin-top:70px;
+  .shedule38 {
+    margin-top: 100px;
 
   }
 
-  .shedule40{
-    margin-bottom:30px;
-    margin-right:30px;
+  .shedule39 {
+    margin-top: 70px;
+
+  }
+
+  .shedule40 {
+    margin-bottom: 30px;
+    margin-right: 30px;
     width: 367px;
     height: 530px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule41{
+  .shedule41 {
     font-family: CometaWeb;
-    font-size:45px;
-    color:#021f62;
-    text-align:center;
+    font-size: 45px;
+    color: #021f62;
+    text-align: center;
   }
 
-  .shedule42{
+  .shedule42 {
     font-family: Aldine401BTWebBold;
-    font-size:20px;
-    color:#418c0b;
+    font-size: 20px;
+    color: #418c0b;
 
   }
 
-  .shedule43{
+  .shedule43 {
     font-family: Aldine401BTWebBold;
-    font-size:28px;
+    font-size: 28px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:20px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 20px;
 
   }
 
-  .shedule44{
+  .shedule44 {
     font-family: Aldine401BTWebBold;
-    font-size:22px;
-    color:#f00000;
-    padding-left:20px;
+    font-size: 22px;
+    color: #f00000;
+    padding-left: 20px;
 
   }
 
-  .shedule45{
-    margin-top:45px;
-    margin-left:10px;
+  .shedule45 {
+    margin-top: 45px;
+    margin-left: 10px;
 
   }
 
-  .shedule46{
+  .shedule46 {
     font-family: Aldine401BTWebBold;
-    font-size:17px;
-    color:#f00000;
+    font-size: 17px;
+    color: #f00000;
     text-decoration: underline;
 
   }
 
-  .shedule47{
-    margin-top:30px;
-    margin-left:10px;
+  .shedule47 {
+    margin-top: 30px;
+    margin-left: 10px;
 
   }
 
-  .shedule48{
+  .shedule48 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
+    font-size: 26px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:20px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 20px;
 
   }
 
-  .shedule49{
+  .shedule49 {
     font-family: Aldine401BTWebBold;
-    font-size:28px;
-    color:#f00000;
-    padding-left:20px;
+    font-size: 28px;
+    color: #f00000;
+    padding-left: 20px;
 
   }
 
-  .shedule50{
-    margin-bottom:30px;
-    margin-right:30px;
+  .shedule50 {
+    margin-bottom: 30px;
+    margin-right: 30px;
     width: 700px;
     height: 530px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule52{
-    margin-top:27px;
-    margin-left:10px;
+  .shedule52 {
+    margin-top: 27px;
+    margin-left: 10px;
 
   }
 
-  .shedule53{
+  .shedule53 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:#f00000;
-    padding-left:350px;
+    font-size: 32px;
+    color: #f00000;
+    padding-left: 350px;
 
   }
 
-  .shedule54{
-    margin-bottom:30px;
-    margin-right:30px;
+  .shedule54 {
+    margin-bottom: 30px;
+    margin-right: 30px;
     width: 333px;
     height: 330px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule55{
-    margin-top:30px;
-    margin-left:10px;
+  .shedule55 {
+    margin-top: 30px;
+    margin-left: 10px;
   }
 
-  .shedule56{
+  .shedule56 {
     width: 670px;
     height: 125px;
-    margin-top:25px;
-    margin-left:37px;
-    text-align:justify;
+    margin-top: 25px;
+    margin-left: 37px;
+    text-align: justify;
   }
 
-  .shedule57{
-    font-size:15px;
-    color:#2b447a;
+  .shedule57 {
+    font-size: 15px;
+    color: #2b447a;
   }
 
-  .shedule58{
-    padding-right:15px;
+  .shedule58 {
+    padding-right: 15px;
   }
 
-  .shedule59{
-    margin-left:170px;
-  }
-  .shedule60{
-    margin-top:13px;
-    margin-left:10px;
-  }
-  .shedule61{
-    margin-top:30px;
-    margin-left:10px;
+  .shedule59 {
+    margin-left: 170px;
   }
 
-  .shedule62{
+  .shedule60 {
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+
+  .shedule61 {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .shedule62 {
     width: 100%;
     height: 20px;
     background: #efefef;
-    margin-bottom:15px;
+    margin-bottom: 15px;
   }
 
-  .shedule63{
-    margin-bottom:30px;
-    margin-right:30px;
+  .shedule63 {
+    margin-bottom: 30px;
+    margin-right: 30px;
     width: 335px;
     height: 440px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule64{
-    margin-top:25px;
-    margin-left:10px;
+  .shedule64 {
+    margin-top: 25px;
+    margin-left: 10px;
   }
 
-  .shedule65{
-    margin-top:47px;
-    margin-left:10px;
+  .shedule65 {
+    margin-top: 47px;
+    margin-left: 10px;
   }
 
-  .shedule66{
-    margin-top:12px;
-    margin-left:10px;
+  .shedule66 {
+    margin-top: 12px;
+    margin-left: 10px;
   }
 
-  .shedule67{
+  .shedule67 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
+    font-size: 26px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:5px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 5px;
 
   }
 
-  .shedule68{
-    margin-top:12px;
-    margin-left:10px;
+  .shedule68 {
+    margin-top: 12px;
+    margin-left: 10px;
   }
 
-  .shedule69{
-    font-family:CometaWeb;
-    font-size:55px;
-    color:#021f62;
-    text-align:center;
-    margin-bottom:20px;
+  .shedule69 {
+    font-family: CometaWeb;
+    font-size: 55px;
+    color: #021f62;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .shedule70{
-    margin-top:30px;
-    margin-right:15px;
+  .shedule70 {
+    margin-top: 30px;
+    margin-right: 15px;
     width: 350px;
     height: 350px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule71{
-    margin-top:20px;
-    margin-left:10px;
+  .shedule71 {
+    margin-top: 20px;
+    margin-left: 10px;
 
   }
 
-  .shedule72{
+  .shedule72 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
+    font-size: 26px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:20px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 20px;
 
   }
 
-  .shedule73{
-    margin-top:30px;
-    margin-right:15px;
+  .shedule73 {
+    margin-top: 30px;
+    margin-right: 15px;
     width: 350px;
     height: 380px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule74{
+  .shedule74 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:black;
-    padding-left:20px;
-    padding-top:7px;
+    font-size: 32px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 7px;
 
   }
 
-  .shedule75{
+  .shedule75 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
+    font-size: 32px;
     line-height: 1;
-    color:black;
-    padding-left:20px;
-    padding-top:3px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 3px;
 
   }
 
-  .shedule76{
-    margin-top:30px;
-    margin-left:10px;
+  .shedule76 {
+    margin-top: 30px;
+    margin-left: 10px;
 
   }
 
-  .shedule77{
-    margin-top:10px;
-    margin-left:10px;
+  .shedule77 {
+    margin-top: 10px;
+    margin-left: 10px;
 
   }
 
-  .shedule78{
-    margin-left:50px;
-    margin-top:10px;
+  .shedule78 {
+    margin-left: 50px;
+    margin-top: 10px;
 
   }
 
-  .shedule79{
+  .shedule79 {
     font-family: Aldine401BTWebBold;
-    font-size:30px;
-    color:black;
-    padding-left:20px;
-    padding-top:20px;
+    font-size: 30px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 20px;
 
   }
 
-  .shedule80{
+  .shedule80 {
     font-family: Aldine401BTWebBold;
-    font-size:26px;
-    color:#FFFFFF;
-    text-align:center;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
   }
 
-  .shedule81{
-    margin-top:25px;
-    margin-left:10px;
+  .shedule81 {
+    margin-top: 25px;
+    margin-left: 10px;
 
   }
 
-  .shedule82{
+  .shedule82 {
     font-family: Aldine401BTWebBold;
-    font-size:46px;
-    color:#003586;
-    text-align:center;
-    margin-bottom:25px;
+    font-size: 46px;
+    color: #003586;
+    text-align: center;
+    margin-bottom: 25px;
   }
 
-  .shedule83{
-    margin-top:30px;
-    margin-right:30px;
+  .shedule83 {
+    margin-top: 30px;
+    margin-right: 30px;
     width: 706px;
     height: 686px;
     background: #FFF;
     border: solid 4px #e2e2e2;
-    text-align:  center;
+    text-align: center;
   }
 
-  .shedule84{
+  .shedule84 {
     font-family: Aldine401BTWebBold;
-    font-size:50px;
-    color:#f00000;
+    font-size: 50px;
+    color: #f00000;
   }
 
-  .shedule85{
+  .shedule85 {
     font-family: Aldine401BTWebBold;
-    font-size:30px;
-    color:#418c0b;
+    font-size: 30px;
+    color: #418c0b;
   }
 
-  .shedule86{
+  .shedule86 {
     font-family: Aldine401BTWebBold;
-    font-size:32px;
-    color:#f00000;
+    font-size: 32px;
+    color: #f00000;
   }
 
-  .shedule87{
+  .shedule87 {
     width: 650px;
-    margin-top:30px;
-    margin-left:30px;
-    margin-right:200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 200px;
   }
 
-  .shedule88{
-    margin-left:100px;
+  .shedule88 {
+    margin-left: 100px;
     width: 250px;
 
   }
 
-  .shedule89{
+  .shedule89 {
     font-family: Aldine401BTWebBold;
-    font-size:24px;
+    font-size: 24px;
     line-height: 1;
-    color:black;
-    padding-left:10px;
-    padding-top:20px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 20px;
 
   }
 
-  .shedule90{
-    margin-top:30px;
-    margin-right:15px;
+  .shedule90 {
+    margin-top: 30px;
+    margin-right: 15px;
     width: 350px;
     height: 370px;
     background: #FFF;
     border: solid 4px #e2e2e2;
   }
 
-  .shedule91{
+  .shedule91 {
     font-family: CometaWeb;
-    font-size:45px;
-    color:#27216b;
-    text-align:center;
+    font-size: 45px;
+    color: #27216b;
+    text-align: center;
   }
 
-  .shedule92{
-    margin-bottom:30px;
-    margin-right:30px;
+  .shedule92 {
+    margin-bottom: 30px;
+    margin-right: 30px;
     width: 367px;
     height: 530px;
     background: #FFF;
     border: solid 4px #68b92d;
   }
 
-  .shedule93{
-    color:#ff0000;
-    text-align:center;
+  .shedule93 {
+    color: #ff0000;
+    text-align: center;
   }
 
-  .shedule94{
-    color:#27216b;
-    text-align:center;
+  .shedule94 {
+    color: #27216b;
+    text-align: center;
   }
 
   .shedule95 {
@@ -7870,17 +7886,17 @@ button.close.close-gallery {
     border-color: #132f6d;
   }
 
-  .shedule96{
-    padding-bottom:45px;
-    margin-right:105px;
-    padding-top:40px;
+  .shedule96 {
+    padding-bottom: 45px;
+    margin-right: 105px;
+    padding-top: 40px;
 
   }
 
-  .shedule97{
+  .shedule97 {
     font-family: Aldine401BTWebBold;
-    font-size:24px;
-    margin-left:105px;
+    font-size: 24px;
+    margin-left: 105px;
   }
 
   .shedule98 {
@@ -7892,3 +7908,4 @@ button.close.close-gallery {
   .shedule99 {
     color: #ff0000;
   }
+}
