@@ -13,8 +13,12 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="app/styles/main.css">
     <link rel="stylesheet" href="app/assets/bootstrap/css/bootstrap.css"/>
+
+    <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.css"/>
+
     <!-- endbuild -->
   </head>
   <body ng-app="clientApp">
@@ -40,11 +44,11 @@
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">AtlasJ</a></li>
-              <li><a ng-href="#/muscles">Мышцы</a></li>
+              <li><a ng-href="#/muscles">М'язи</a></li>
               <li><a ng-href="#/skeleton">Скелет</a></li>
-              <li><a ng-href="#/joints">Суставы</a></li>
-              <li><a ng-href="#/tissue">Ткани</a></li>
-              <li><a ng-href="#/systems">Системы</a></li>
+              <li><a ng-href="#/joints">Суглоби</a></li>
+              <li><a ng-href="#/tissue">Тканини</a></li>
+              <li><a ng-href="#/systems">Системи</a></li>
               <li><a ng-href="#/test">Тести</a></li>
             </ul>
           </div>
@@ -85,6 +89,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui/build/angular-ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -95,6 +100,7 @@
         <script src="app/scripts/controllers/body-systems-ctrl.js"></script>
         <script src="app/scripts/controllers/testCtrl.js"></script>
         <script src="app/scripts/factory/body-sysems-factory.js"></script>
+        <script src="app/scripts/directives/custPopover.js"></script>
 
         <!-- endbuild -->
 </body>
