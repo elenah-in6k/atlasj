@@ -21,16 +21,18 @@ angular.module('clientApp')
     var result;
     for(var i=0; i<=atlas.length; i++){
       console.log(atlas[i]);
-      var name = atlas[i].name;
+      var name = atlas[i].name1;
       console.log(name);
-    //   if (search1.search(name) != -1)
-    //    result = atlas[i].link;
-    // else
-    //     result = "not";
+      if (search1.search(name) != -1)
+       result = atlas[i].link;
+    else
+        result = "not";
     }
-    // location.hash = result;
-    //
-    // window.location = location;
+    location.hash = result;
+
+    window.location = location;
   }
+
+
 
   });

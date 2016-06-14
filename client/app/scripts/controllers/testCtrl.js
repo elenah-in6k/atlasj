@@ -26,10 +26,17 @@ angular.module('clientApp')
           $scope.score++;
         }
       }
-      $rootScope.scorePersent = Math.round(($scope.score * 100)/questNumb);
-      $rootScope.score = $scope.score;
-      $rootScope.questNumb = questNumb;
-      alert($scope.score + "/"+ questNumb + " правильних відповідей, це " +  $rootScope.scorePersent + " % правильних відповідей")
+      $scope.scorePersent = Math.round(($scope.score * 100)/questNumb);
+      $scope.score = $scope.score;
+      $scope.questNumb = questNumb;
+      alert($scope.score + "/"+ questNumb + " правильних відповідей, це " +  $rootScope.scorePersent + " % правильних відповідей");
+
+      window.localStorage.setItem("scorePersent", $scope.scorePersent);
+      window.localStorage.setItem("questNumb", $scope.questNumb);
+      window.localStorage.setItem("score", $scope.score);
+
+
+      window.location.hash = "#/test/result";
     }
 
     function clearForm(name) {
