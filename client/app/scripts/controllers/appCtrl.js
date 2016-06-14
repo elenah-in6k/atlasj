@@ -20,7 +20,7 @@ angular.module('clientApp')
     var location = window.location;
     var result;
     for(var i=0; i<=atlas.length; i++){
-
+      console.log(atlas[i]);
       var name = atlas[i].name;
       console.log(name);
     //   if (search1.search(name) != -1)
