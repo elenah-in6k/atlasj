@@ -146,6 +146,7 @@ angular
               "дистальний епіфіз."],
             correctAnswer: 3
           }
+
         ]
       }
     };
@@ -416,7 +417,10 @@ angular
       .when('/test/muscles', musclesTest)
       .when('/test/skeleton', skeletonTest)
       .when('/test/heard', heardTest)
-
+      .when('/test/result', {
+        templateUrl: 'app/views/tests/result.html',
+        controller: 'TestCtrl'
+      })
       .when('/not', {
         templateUrl: 'app/views/not-impl.html'
       })

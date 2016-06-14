@@ -92,6 +92,10 @@ strong {
 dfn {
   font-style: italic;
 }
+.fleft{
+  margin-left: 60%;
+  color: black;
+}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -7929,4 +7933,5 @@ area[title]:hover:after {
   white-space: nowrap;
   background-color:red;
 }
+
 

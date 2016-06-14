@@ -1,6 +1,6 @@
 'use strict';
 angular.module('clientApp')
-  .controller('TestCtrl', ['$scope','$route', function ($scope, $route) {
+  .controller('TestCtrl', ['$scope','$route','$rootScope', function ($scope, $route, $rootScope) {
     var info = $route.current.$$route.info;
     $scope.questionsName = info.questionsName;
     $scope.questions = info.questions;
@@ -15,6 +15,9 @@ angular.module('clientApp')
 
 
     $scope.showRes = function(){
+      $rootScope.scorePersent = 0;
+      $rootScope.score = 0;
+      $rootScope.questNumb = 0;
       var yourAnswers = $scope.yourAns;
       var questNumb = $scope.questions.length;
 
@@ -23,8 +26,10 @@ angular.module('clientApp')
           $scope.score++;
         }
       }
-      $scope.scorePersent = Math.round(($scope.score * 100)/questNumb);
-      alert($scope.score + "/"+ questNumb + " правильних відповідей, це " + $scope.scorePersent + " % правильних відповідей")
+      $rootScope.scorePersent = Math.round(($scope.score * 100)/questNumb);
+      $rootScope.score = $scope.score;
+      $rootScope.questNumb = questNumb;
+      alert($scope.score + "/"+ questNumb + " правильних відповідей, це " +  $rootScope.scorePersent + " % правильних відповідей")
     }
 
     function clearForm(name) {

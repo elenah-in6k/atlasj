@@ -21,7 +21,7 @@
 
     <!-- endbuild -->
   </head>
-  <body ng-app="clientApp">
+  <body ng-app="clientApp" ng-controller="ApplicationController">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -50,12 +50,17 @@
               <li><a ng-href="#/tissue">Тканини</a></li>
               <li><a ng-href="#/systems">Системи</a></li>
               <li><a ng-href="#/test">Тести</a></li>
+
+                <form class="fleft" ><input type="text" name="search" ng-model="search.value">
+                  <button type="submit" ng-click="search(search.value)">Пошук</button>
+                </form>
+
             </ul>
+
           </div>
         </div>
       </div>
     </div>
-
     <div class="container">
     <div ng-view=""></div>
     </div>
@@ -99,6 +104,7 @@
         <script src="app/scripts/controllers/about.js"></script>
         <script src="app/scripts/controllers/body-systems-ctrl.js"></script>
         <script src="app/scripts/controllers/testCtrl.js"></script>
+        <script src="app/scripts/controllers/appCtrl.js"></script>
         <script src="app/scripts/factory/body-sysems-factory.js"></script>
         <script src="app/scripts/directives/custPopover.js"></script>
 
