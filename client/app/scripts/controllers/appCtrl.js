@@ -85,6 +85,30 @@
             {
               link: '/skeleton',
               name: "скелет"
+            },
+            {
+              link: '/joints',
+              name: "суглоби"
+            },
+            {
+              link: '/tissue',
+              name: "тканини"
+            },
+            {
+              link: '/systems',
+              name: "систем"
+            },
+            {
+              link: '/systems/heard',
+              name: "серцева"
+            },
+            {
+              link: '/systems/heard/heard',
+              name: "серце"
+            },
+            {
+              link: '/test',
+              name: "тест"
             }
 
 
