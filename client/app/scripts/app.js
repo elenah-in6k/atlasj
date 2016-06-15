@@ -75,14 +75,7 @@ angular
               "міофібрилами",
               "саркомерами"
             ],
-          correctAnswer: 2},
-        {
-          text: "Символ есть:",
-          answers: ["образ, видоизмененный переживанием",
-            "отражение личных представлений художника",
-            "образ - точная копия окружающей действительности"],
-          correctAnswer: 2
-        }
+          correctAnswer: 2}
       ]
       }
     };
@@ -239,7 +232,7 @@ angular
           },
 
           {
-            text: "	30.	Назвіть рівень на якому розташовується верхівка серця",
+            text: "	Назвіть рівень на якому розташовується верхівка серця",
             answers: [
               "верхній край хрящів ІІІ ребер;",
               "IV міжребровий проміжок, зліва;",
@@ -250,9 +243,9 @@ angular
           },
 
           {
-            text: "	31.	Назвіть рівень на якому розташовується верхня межа серця",
+            text: "	Назвіть рівень на якому розташовується верхня межа серця",
             answers: [
-              "пхрящі І ребер;",
+              "хрящі І ребер;",
               "верхній край хрящів ІІІ ребер;",
               "IV міжребровий проміжок;",
               "V міжребровий проміжок;",
@@ -384,6 +377,9 @@ angular
       .when('/systems/heard', {
         templateUrl: 'app/views/systems/heard/heard.html'
       })
+      .when('/systems/heard/heard', {
+        templateUrl: 'app/views/systems/heard/heard-m.html'
+      })
       .when('/systems/blood', {
         templateUrl: 'app/views/systems/blood/blood.html'
       })
@@ -419,7 +415,7 @@ angular
       .when('/test/heard', heardTest)
       .when('/test/result', {
         templateUrl: 'app/views/tests/result.html',
-        controller: 'TestCtrl'
+        controller: 'ApplicationController'
       })
       .when('/not', {
         templateUrl: 'app/views/not-impl.html'

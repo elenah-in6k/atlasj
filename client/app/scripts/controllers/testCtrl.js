@@ -1,6 +1,6 @@
 'use strict';
 angular.module('clientApp')
-  .controller('TestCtrl', ['$scope','$route','$rootScope', function ($scope, $route, $rootScope) {
+  .controller('TestCtrl', ['$scope','$route','$rootScope','$location', function ($scope, $route, $rootScope, $location) {
     var info = $route.current.$$route.info;
     $scope.questionsName = info.questionsName;
     $scope.questions = info.questions;
@@ -27,17 +27,16 @@ angular.module('clientApp')
         }
       }
       $scope.scorePersent = Math.round(($scope.score * 100)/questNumb);
-      $scope.score = $scope.score;
       $scope.questNumb = questNumb;
-      alert($scope.score + "/"+ questNumb + " правильних відповідей, це " +  $rootScope.scorePersent + " % правильних відповідей");
+      alert($scope.score + "/"+ questNumb + " правильних відповідей, це " +  $scope.scorePersent + " % правильних відповідей");
 
       window.localStorage.setItem("scorePersent", $scope.scorePersent);
       window.localStorage.setItem("questNumb", $scope.questNumb);
       window.localStorage.setItem("score", $scope.score);
 
-
-      window.location.hash = "#/test/result";
-    }
+      console.log($location);
+      $location.path("/test/result");
+    };
 
     function clearForm(name) {
       var f = document.forms[name];
